@@ -1,5 +1,5 @@
 require 'spec_helper'
-require File.expand_path('../../lib/striptease/matchers/strip_whitespace_from', __FILE__)
+require File.expand_path('../../lib/striptease/rspec/matchers/strip_whitespace_from', __FILE__)
 
 class TestRecord
   attr_accessor :foo, :bar
