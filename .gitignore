@@ -1,4 +1,6 @@
 .bundle
 *.gem
+Gemfile.lock
 .ruby-version
 striptease_sqlite_database
+*.swp
