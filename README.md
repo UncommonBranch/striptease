@@ -20,13 +20,13 @@ being stripped as expected.
 
 **AR Models:**
 
-Just call `strip_whitespace` in your model class, passing one or more attributes
+Just call `strip_whitespace_from` in your model class, passing one or more attributes
 you want stripped of leading and trailing whitespace. Striptease does this in a
 `before_validation` hook.
 
 ```rb
 class SomeClass < ActiveRecord::Base
-  strip_whitespace :foo, :bar
+  strip_whitespace_from :foo, :bar
 end
 ```
 

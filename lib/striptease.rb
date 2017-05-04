@@ -9,10 +9,13 @@ module Striptease
     end
   end
 
-  def strip_whitespace(*attributes)
+  def strip_whitespace_from(*attributes)
     self.strippable_attributes = attributes
     before_validation :_strip_whitespace
   end
+
+  # NOTE: for backwards compatability, remove in next major version bump
+  alias_method :strip_whitespace, :strip_whitespace_from
 
   module InstanceMethods
     private
